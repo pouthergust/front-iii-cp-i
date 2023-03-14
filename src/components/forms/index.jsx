@@ -17,7 +17,7 @@ function Forms() {
     return (
         <div className='retanguloAzul'>
           <div className='retanguloBranco'>
-            <h1>Cadastrar Tarefa</h1>
+            <h1 className ='cadastro'>Cadastrar Tarefa</h1>
               <form onSubmit={handleSubmit} ref={form}>
                 <input type="text" name="title" placeholder="Título"/>
                 <select
@@ -25,7 +25,7 @@ function Forms() {
                 onChange={(event) => setcategoria(event.target.value)}>
                   <option value="">Categoria</option>
                   <option value="trabalho">Trabalho</option>
-                  <option value="Lazer">Aquilo que não temos</option>
+                  <option value="lazer">Aquilo que não temos</option>
                   <option value="dh">DH</option>
                   <option value="outros">Outros</option>
                 </select>

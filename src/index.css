@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #ffffff;
+  background-color: #1e1e1e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,23 +37,37 @@ h1 {
 }
 
 button {
+  width: 287px;
+  height: 52px;
+  left: 97px;
+  top: 734px;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  background: #E84118;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
+/* Retângulo formulário 
+position: absolute;
+width: 343px;
+height: 568px;
+left: 69px;
+top: 275px;
+background: #FFFFFF;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px; */
+
+
+/* - retângulo azul 
+width: 482px;
+height: 1117px;
+left: 0px;
+top: 0px;
+
+background: #102766; */
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import getFormData from '../../utils/getFormData';
+import getFormData from '../../utils/getFormDataAndConvertToObj';
 import '../../index.css';
 
 function Forms() {
@@ -22,7 +22,6 @@ function Forms() {
               <form onSubmit={handleSubmit} ref={form}>
                 <input type="text" name="title" placeholder="Título"/>
                 <select
-                value={categoria}
                 name="categoria">
                   <option value="">Categoria</option>
                   <option value="trabalho">Trabalho</option>
@@ -32,7 +31,7 @@ function Forms() {
                 </select>
                 <input type="date" name="data" placeholder="Data"/>
 
-                <label> Descrição <textarea name="descricao" value={this.state.value} onChange={this.handleChange} />       
+                <label> Descrição <textarea name="descricao"/>       
                 </label>
 
 

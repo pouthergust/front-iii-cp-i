@@ -1,0 +1,21 @@
+.toast {
+  border-radius: 2px;
+  bottom: 24px;
+  color: white;
+  display: grid;
+  font-size: 16px;
+  height: 52px;
+  left: 24px;
+  opacity: 0;
+  padding-inline: 16px;
+  place-items: center;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+  z-index: 1301;
+}
+
+.toast.success { background: #6daf6d; }
+.toast.failed  { background: #ff4c4c; }
+.toast.warning { background: #ffe300; }
+
+.visible { opacity: 1; }

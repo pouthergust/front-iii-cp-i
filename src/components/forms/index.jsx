@@ -1,8 +1,9 @@
 import { useRef } from 'react';
 import getFormData from '../../utils/getFormData';
+import '../../index.css';
 
 function Forms() {
-  const form = useRef(null);
+  const form = useRef(null); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +23,7 @@ function Forms() {
                 <input type="text" name="title" placeholder="Título"/>
                 <select
                 value={categoria}
-                onChange={(event) => setcategoria(event.target.value)}>
+                name="categoria">
                   <option value="">Categoria</option>
                   <option value="trabalho">Trabalho</option>
                   <option value="lazer">Aquilo que não temos</option>
@@ -31,8 +32,8 @@ function Forms() {
                 </select>
                 <input type="date" name="data" placeholder="Data"/>
 
-                {/* Preciso adicionar o textarea - descrição */}
-                {/* <label> Descrição <textarea value={this.state.value} onChange={this.handleChange} />        </label> */}
+                <label> Descrição <textarea name="descricao" value={this.state.value} onChange={this.handleChange} />       
+                </label>
 
 
                 <button type="submit">Salvar</button>
